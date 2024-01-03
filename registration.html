@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Регистрация
+{% endblock %}
+
+{% block body %}
+<center>
+    <div class='container mt-5'>
+        <h1>Регистрация</h1>
+        <fieldset>
+            <form action="/registration" method="post">
+                <legend>Введите данные</legend>
+                <label>Имя<input name="name" type="name" id="name" class="form-control" placeholder="Name" required></label><br>
+                <label>Логин<input name="login" type="login" id="login" class="form-control" placeholder="Login" required></label><br>
+                <label>Емаил<input name="email" type="email" id="email" class="form-control" placeholder="Email" required></label><br>
+                <label>Пароль<input name="passwords" type="passwords" id="passwords" class="form-control" placeholder="Password" required></label><br>
+                <input type="submit" class="btn btn-danger" value="Зарегистрироваться"><br>
+            </form>
+        </fieldset>
+    </div>
+</center>
+{% endblock %}
