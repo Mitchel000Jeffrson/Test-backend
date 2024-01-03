@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Вход
+{% endblock %}
+
+{% block body %}
+<center>
+    <div class='container mt-5'>
+        <h1>Вход</h1>
+        <fieldset>
+            <form method="POST">
+                <legend>Введите ваши данные</legend>
+                <label>Логин<input name="login" type="login" id="login" class="form-control" placeholder="Login" required></label><br>
+                <label>Пароль<input name="passwords" type="passwords" id="passwords" class="form-control" placeholder="Password" required></label><br>
+                <input type="submit" class="btn btn-success" value="Войти"><br>
+            </form>
+        </fieldset>
+        <a href="/registration" type="submit" class="btn btn-danger">Регистрация</a>
+    </div>
+</center>
+{% endblock %}
